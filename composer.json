@@ -1,0 +1,21 @@
+{
+    "name": "ed-fruty/laravel-custom-model-builder",
+    "description": "Custom model query builder for Laravel Eloquent",
+    "keywords" : ["laravel", "php", "eloquent", "model", "query", "builder"],
+    "require": {
+        "laravel/framework": "~4.2"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Fruty\\LaravelModelBuilder\\" : "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduard",
+            "email": "ed.fruty@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
