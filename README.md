@@ -12,7 +12,7 @@ Write it in every cahing query is not good choise. So we can define custom query
 1. Install package via composer
   
   ```bash
-  composer require "ed-fruty/laravel-custom-model-builder": "dev-master@dev"
+  composer require "ed-fruty/laravel-custom-model-builder": "1.0.0"
 ```
 
 2. Add the service provider in `app/config/app.php`:
