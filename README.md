@@ -34,12 +34,15 @@ Now, create file `app/ExampleBuilder.php` and put here:
 
 class ExampleBuilder extends Illuminate\Database\Eloquent\Builder
 {
+  
+  /**
+   * Add new method to builder
+   *
+   * @access public
+   */
   public function cacheIt()
   {
-    static $cacheTime;
-    if (! $cacheTime) {
-      $cacheTime = Config::get('someting.where.cache.time.saved');
-    }
+    $cacheTime = Config::get('someting.where.cache.time.saved');
     
     return $this->getModel()
       ->remember($cacheTime)
